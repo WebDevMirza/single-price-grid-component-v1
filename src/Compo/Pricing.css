@@ -1,0 +1,102 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+.container {
+  max-width: 375px;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+  padding-top: 1rem;
+}
+
+.card-light {
+  border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.card-dark {
+  background-color: var(--Cyan);
+}
+
+.card-accent {
+  background-color: rgba(26, 34, 34, 0.568);
+  height: 100%;
+  border-radius: 0 0 0.375rem 0.375rem;
+}
+
+@media (min-width: 768px) {
+  .card-dark {
+    border-radius: 0 0 0 0.375rem;
+  }
+
+  .card-accent {
+    border-radius: 0 0 0.375rem 0;
+  }
+}
+
+/* 
+    ===============================
+    Typography
+    ===============================
+*/
+
+.join,
+.text-subs,
+.price-unit {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.join {
+  color: var(--Cyan);
+}
+.text-yellow {
+  color: var(--BrightYellow);
+}
+
+.text-subs,
+.price-tag {
+  color: var(--LightGray);
+}
+
+.price-unit {
+  color: rgb(184, 184, 184);
+  font-weight: 400;
+}
+
+.card-text {
+  color: rgb(223, 216, 203);
+}
+
+.text-main {
+  color: var(--GrayishBlue);
+}
+
+.btn-signup {
+  background-color: var(--BrightYellow);
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsla(71, 73%, 54%, 0.747);
+  color: whitesmoke;
+}
+
+.text-sp {
+  max-width: 73%;
+}
